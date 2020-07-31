@@ -38,7 +38,7 @@ const Chat = ({location}) => {
             socket.off();
         }
     
-    }, [ENDPOINT, location.seacrh]);
+    }, [ENDPOINT, location.search]);
 
     useEffect(() => {
         socket.on('message', (message) => {
